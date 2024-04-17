@@ -107,3 +107,38 @@ p{
     justify-content: center;
     min-height: 20vh;
   }
+
+  /*FOOTER */
+  .footer{
+    position: relative;
+    background-color: #e0dfff;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .footer-links{
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    font-size: 18px;
+
+  }
+
+  .footer-links li {
+    margin-bottom: 4vh;
+    margin-right: 10vh;
+  }
+  
+  .footer-links a {
+    color: rgb(25, 25, 48);
+    text-decoration: none;
+}
+
+.copyright{
+    position: absolute;
+    align-self: flex-end;
+    margin-left: 20px;
+  }
