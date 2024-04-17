@@ -146,16 +146,6 @@
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
-  .hero-text h1 {
-    font-size: 40px;
-    line-height: 44px;
-  }
-
-  .hero-text h2 {
-    font-size: 28px;
-    line-height: 32px;
-  }
-
   .content {
     min-height: 30vh;
   }
