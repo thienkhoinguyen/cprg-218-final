@@ -74,18 +74,19 @@ p{
 
   main{
     width: 100%;
-    height: 130vh;
+    height: 90vh;
     background-color:rgb(203, 227, 255);
     background-image: url("/assets/KhoitheFish_Hero.png");
-    background-size: 60% auto;
+    background-size: 50% auto;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center bottom;
     display: flex;
     align-items: center;
   }
 
   .hero-text{
-    margin-left: 45vh;
+    margin-left: 56vh;
+    margin-top: 32vh;
     max-width: 800px;
     height: 120vh;
     text-align:left;
