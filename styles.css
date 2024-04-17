@@ -101,6 +101,10 @@ p{
 
   /* PROJECTS */
 
+  .container{
+    display: flex;
+  }
+
   .projects{
     display: flex;
     align-items: center;
@@ -108,9 +112,16 @@ p{
     min-height: 20vh;
   }
 
+  .overlay, .visual {
+    flex: 1;
+    margin: 0 10px;
+  }
+
+
   .overlay{
     width: 50%;
     margin: 0 auto;
+    text-align: center;
   }
 
   .overlay video{
@@ -121,10 +132,11 @@ p{
   .visual{
     width: 50%;
     margin: 0 auto;
+    text-align: center;
   }
 
   .visual img{
-    width: 100%;
+    width: 60%;
     height: auto;
   }
 
