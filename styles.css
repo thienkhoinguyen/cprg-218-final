@@ -108,6 +108,17 @@ p{
     min-height: 20vh;
   }
 
+  .overlay{
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .overlay video{
+    width: 100%;
+    height: auto;
+  }
+
+
   /* CONTENT SPLIT */
 
   .info{
