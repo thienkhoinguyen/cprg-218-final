@@ -2,13 +2,17 @@
   
   /* MOBILE */
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) { 
 
     h1{
       font-size: 22px;
     }
 
     h2{
+      font-size: 22px;
+    }
+
+    h3{
       font-size: 18px;
     }
 
@@ -16,25 +20,25 @@
       font-size: 14px;
     }
 
-    .hero-text h1{
+    main {
+      height: 44vh;
+      background-size: 100% auto;
+  }
+
+
+    .hero-text h2{
       font-size: 26px;
       line-height: 28px;
     }
 
-    .hero-text h2{
-      font-size: 18px;
-      line-height: 26px;
-    }
-
     .hero-text{
-      max-width: 50%;
-      text-align: center;
-      margin: 0 auto;
-
+      text-align: left;
+      margin-top: 82vh;
+      margin-left: 2vh;
     }
+
 
 /* HAMBURGER MENU */
-
 
 .mobile-menu{
   display: block;
@@ -42,7 +46,7 @@
 
 .topnav {
   overflow: hidden;
-  background-color: aliceblue;
+  background-color: rgb(255, 255, 255);
   position: absolute;
   top: 2rem;
   right: 3rem;
@@ -82,17 +86,6 @@
   .content{
     align-items: center;
     justify-content: center;
-  }
-  .card-container{
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: center;
-    gap: 10px;
-
-  }
-  
-  .card{
-    width: 80%;
   }
   
   /* SPLIT - MOBILE */
