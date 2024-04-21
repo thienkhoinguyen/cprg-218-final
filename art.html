@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="media-query.css">
+        <link rel="stylesheet" type="text/css" href="digimon.css">
+        <title>KHOITHEFISH</title>
+    </head>
+    
+    <header>
+        <div class="logo"><img src="assets/Logo.png" aria-label="Letter spelling Khoi with a fish inside the O">
+        </div>
+
+        <ul class="nav-links">
+            <a href="art.html">ART</a>
+            <a href="index.html">PROJECTS</a>
+            <a href="about.html">ABOUT</a>
+        </ul>
+        <div class="hamburger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <div class="mobile-menu">
+            <div class="topnav">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div id="myLinks">
+                    <a href="art.html">ART</a>
+                    <a href="index.html">PROJECTS</a>
+                    <a href="about.html">ABOUT</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container">
+        <ul class="card-container">
+            <li class="card">
+                <img src="assets/Tiger.jpg" alt="drawing of a tiger and infront of the tiger is a woman in anime style">
+                <div class="card-content">
+                    <h3 class="header">
+                        Tiger and Girl
+                    </h3>
+                        <p>from $65.00</p>
+                </div>
+            </li>
+            <li class="card">
+                <img src="assets/God.jpg" alt="Elderly man with tattoos holding an axe in a frosty mountain, behind his head are viking symbols">
+                <div class="card-content">
+                    <h3 class="header">
+                        War of God
+                    </h3>
+                        <p>from $55.00</p>
+                </div>
+            </li>
+            <li class="card">
+                <img src="assets/Mask.jpg" alt="Floating green mask that is split with whtie and yellow flowers flowoing out, the eyes are glowing">
+                <div class="card-content">
+                    <h3 class="header">
+                        Demon Mask
+                    </h3>
+                        <p>from $75.00</p>
+                </div>
+            </li>
+            <li class="card">
+                <img src="assets/boarhead.jpg" alt="young man in front of the moon at night holding a boar mask as clouds are infront of him">
+                <div class="card-content">
+                    <h3 class="header">
+                        Man with Boar Head
+                    </h3>
+                        <p>from $75.00</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="accordions">
+        <button class="accordion"><span>INSPIRATION</span><i class="fa-solid fa-paintbrush" alt="Paintbrush icon, click to view inspiration video and content"></i></button>
+        <div class="panel">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ImzFgjnSLCc?si=WglcdTqoPPqSevY9" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video-content">
+                <h2>Inspiration from others</h2>
+                <p>As an artist, it is important to take inspiration and lessons from other artists. Here is a sample video of one of the first artists that inspired me to try digital art specifically using Procreate on the iPad. Through various online tutorials and lessons, I had cultivated my own style. This video is from <strong>씰Seal</strong>, a Korean digital artist and one of my greatest inspirations!</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
+
+    <section class="container">
+        <ul class="card-container">
+            <li class="card">
+                <img src="assets/Shadowheart.jpg" alt="elf woman looking at screen with black hair and chainmail holding a sphere">
+                <div class="card-content">
+                    <h3 class="header">
+                        Elf with orb
+                    </h3>
+                        <p>from $65.00</p>
+                </div>
+            </li>
+            <li class="card">
+                <img src="assets/Shenhe.jpg" alt="woman holding a spear in chinese outfit floating infront of flowers">
+                <div class="card-content">
+                    <h3 class="header">
+                        Women with spear
+                    </h3>
+                        <p>from $55.00</p>
+                </div>
+            </li>
+            <li class="card">
+                <img src="assets/Man_shadow.jpg" alt="man putting his hands together and emiting a blow glue with shadows with teeth surrounding him">
+                <div class="card-content">
+                    <h3 class="header">
+                        Man and shadow
+                    </h3>
+                        <p>from $75.00</p>
+                </div>
+            </li>
+            <li class="card">
+                <img src="assets/vampire.png" alt="a pale vampire with glowing red eyes holding knife with red symbols flaoting in the back">
+                <div class="card-content">
+                    <h3 class="header">
+                        Vampire holding knife
+                    </h3>
+                        <p>from $75.00</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+     
+
+  
+
+    <script>
+    document.getElementById('currentYear').innerHTML = new Date().getFullYear();
+        function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+        }</script>
+    </div>
+
+</html>
