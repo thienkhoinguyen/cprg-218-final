@@ -114,12 +114,15 @@
 
 /* FOOTER - MOBILE */
 .footer{
-  height: 40vh;
+  height: 44vh;
 }
+
 .footer .footer-row {
-  gap: 2rem; 
-  margin-left: 0;
-  padding: 10px
+  justify-content: space-between;
+  gap: 3rem; 
+  margin-left: 0vh; 
+  margin-right: 6vh;
+  padding: 20px; 
 }
 
 .footer-col {
@@ -127,14 +130,13 @@
   margin-bottom: 20px;
 }
 
-.footer p {
-  margin-top: 20px;
-}
-
 .footer .copyright {
   position: static;
-  margin-top: 20px; 
   text-align: center; 
+}
+
+.copyright p {
+  font-size: 22px;
 }
 
 }
