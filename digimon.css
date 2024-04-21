@@ -1,4 +1,6 @@
-/* Sections */
+.digimon-list {
+  margin: 8vh;
+}
 .container {
   margin: 3rem auto;
   max-width: 75rem;
@@ -16,8 +18,8 @@
 /* Option header */
 .option-container {
   text-align: center;
-  background-color: rgb(203, 227, 255);
-  padding: 3rem 1rem;
+  align-items: center;
+  justify-content: center;
 }
 
 

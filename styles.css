@@ -100,26 +100,14 @@ p{
   }
 
   /* PROJECTS */
-
-  .container{
-    display: flex;
-  }
-
   .projects{
-    display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 20vh;
+    text-align: center;
   }
-
-  .overlay, .visual {
-    flex: 1;
-    margin: 0 10px;
-  }
-
 
   .overlay{
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
   }
@@ -130,13 +118,13 @@ p{
   }
 
   .visual{
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
   }
 
   .visual img{
-    width: 60%;
+    width: 80%;
     height: auto;
   }
 
