@@ -81,14 +81,10 @@
   display: none;
 }
 
-  /*CONTENT - MOBILE */
-
   .content{
     align-items: center;
     justify-content: center;
   }
-  
-  /* SPLIT - MOBILE */
 
   .info{
     flex-direction: column-reverse;
@@ -96,7 +92,6 @@
     padding: 50px;
   }
 
-/* ACCORDION - MOBILE */
   .panel {
       display: flex;
       flex-direction: column;
@@ -197,10 +192,37 @@
     max-width: 300px;
   }
 
-  .footer-links {
-    font-size: 16px;
+  .footer{
+    height: 36vh;
   }
 
+  .footer .footer-row {
+    justify-content: space-between;
+    gap: 4rem; 
+    margin-left: 0vh; 
+    margin-right: 4vh;
+    padding: 20px; 
+  }
+
+  .footer .footer-col h4{
+    font-size: 18px;
+  }
+
+  .footer-col ul li a {
+    font-size: 16px;
+  }
+  
+  
+  .footer .copyright {
+    position: absolute;
+    top: 26vh;
+    left: 8vh;
+    font-size: 16px; 
+  }
+
+  .copyright p{
+    line-height: 2vh;
+  }
 }
 
 
