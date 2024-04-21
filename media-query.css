@@ -22,7 +22,7 @@
 
     main {
       height: 64vh;
-      background-size: 90% auto;
+      background-size: 80% auto;
   }
 
 
@@ -33,8 +33,8 @@
 
     .hero-text{
       text-align: left;
-      margin-top: 64vh;
-      margin-left: 8vh;
+      margin-top: 70vh;
+      margin-left: 12vh;
     }
 
 

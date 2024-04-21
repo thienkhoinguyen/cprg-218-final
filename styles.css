@@ -198,6 +198,13 @@ p{
     color: white;
   }
 
+  .otherinfo{
+      text-align: left;
+      padding-left: 12vh;
+      padding-right: 22vh;
+  }
+
+
   /*FOOTER */
   .footer{
     position: relative;
