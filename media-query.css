@@ -162,7 +162,12 @@
     font-size: 14px;
   }
 
-  main {
+.nav-links{
+  display: flex;
+  left: 62vh;
+}
+
+  .main {
     height: 60vh;
     background-size: 80% auto;
 }
