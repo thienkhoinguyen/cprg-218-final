@@ -202,6 +202,7 @@ p{
       text-align: left;
       padding-left: 12vh;
       padding-right: 22vh;
+      margin-bottom: 12vh;
   }
 
   /* CONTENT */
@@ -306,7 +307,6 @@ p{
   width: 120px;
   margin-right: 20px;
 }
-
 
 .footer-row .footer-col h4 {
   font-size: 1.8rem;
