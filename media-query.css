@@ -34,7 +34,7 @@
     .hero-text{
       text-align: left;
       margin-top: 70vh;
-      margin-left: 12vh;
+      margin-left: 10vh;
     }
 
 
@@ -118,22 +118,31 @@
 
 
 /* FOOTER - MOBILE */
-
-  .footer{
-    flex-direction:column;
-    text-align: center;
-  }
-  
-  .footer-links{
-    margin-top: 10px 0;
-    gap: 10px;
-  }
-
-  .footer h1{
-    font-size: 22px;
-  }
+.footer{
+  height: 40vh;
+}
+.footer .footer-row {
+  gap: 2rem; 
+  margin-left: 0;
+  padding: 10px
 }
 
+.footer-col {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  margin-top: 20px;
+}
+
+.footer .copyright {
+  position: static;
+  margin-top: 20px; 
+  text-align: center; 
+}
+
+}
 
 /* TABLET */
 
