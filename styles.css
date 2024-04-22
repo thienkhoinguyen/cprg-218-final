@@ -19,8 +19,8 @@ h2{
 }
 
 h3{
-    font-size: 28px;
-    color: rgb(28, 36, 54);
+    font-size: 32px;
+    color: rgb(69, 114, 218);
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
@@ -105,10 +105,13 @@ p{
   }
 
   /* PROJECTS */
+
   .projects{
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-left: 24vh;
+    margin-right: 24vh;
   }
 
   .overlay{

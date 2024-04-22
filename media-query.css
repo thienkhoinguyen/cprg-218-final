@@ -151,15 +151,15 @@
   }
 
   h2{
-    font-size: 22px;
+    font-size: 24px;
   }
 
   h3{
-    font-size: 18px;
+    font-size: 22px;
   }
 
   p{
-    font-size: 14px;
+    font-size: 20px;
   }
 
 .nav-links{
@@ -185,6 +185,10 @@ main{
 
 .projects{
   margin-top: 0vh;
+}
+
+.visual{
+  width: 80%;
 }
   .card-container {
     grid-template-columns: repeat(2, 1fr);
@@ -235,6 +239,12 @@ main{
 /* DESKTOP */
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
 
+  .nav-links{
+    display: flex;
+    top: 4.4vh;
+    left: 62vh;
+  }
+
   main{
     height: 64vh;
     background-size: 64% auto;
@@ -250,7 +260,6 @@ main{
       margin-top: 68vh;
       margin-left: 24vh;
     }
-
 
 
   .panel {
@@ -283,6 +292,10 @@ main{
 .video iframe {
     width: 100%;
     height: 100%; 
+}
+
+.visual{
+  width: 80%;
 }
 
 /* FOOTER */

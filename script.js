@@ -9,7 +9,7 @@ async function createCardElement(item) {
             <h3 class="header">${item.title}</h3>
             <p class="attribute">Attribute: ${item.attribute}</p>
             <p class="field">Field: ${item.field}</p>
-            <p class="digimon-id">Digimon ID: ${item.id}</p>
+            <h3 class="digimon-id">Digimon ID: ${item.id}</h3>
          </div>
     </div>`;
 }
@@ -73,10 +73,10 @@ async function fetchFieldDetailsById(id) {
 
 
 
-/**digimon list Option 2 */
+/**digimon list */
 
 async function renderOption2() {
-    const myFavouriteDigimon = ["Beelzebumon", "Dukemon", "war greymon", "dianamon", "angemon", "leomon"];
+    const myFavouriteDigimon = ["Beelzebumon", "Dukemon", "war greymon", "plutomon", "mastemon", "Sakuyamon"];
 
     const fetchDigimonData = async (digimon) => {
         try {
