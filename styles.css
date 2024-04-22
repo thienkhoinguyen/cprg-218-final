@@ -226,9 +226,9 @@ p{
     width: 100%;
   }
 
-    /* ACCORDION */
+/* ACCORDION */
   
-.accordion{
+.accordion {
   background-color: #0c171f;
   color: #ffffff;
   cursor: pointer;
@@ -243,20 +243,19 @@ p{
   margin-bottom: 10px;
 }
 
-.active, .accordion:hover{
+.active,
+.accordion:hover {
   background-color: rgb(1, 17, 70);
   color: #ffffff;
 }
 
 .panel {
   background-color: rgb(203, 227, 255);
-  display: none;
   overflow: hidden;
+  display: none;
 }
 
-.video-content{
-  display: flex;
-  flex-direction: column;
+.video-content {
   text-align: center;
   margin-left: 12vh;
   margin-right: 12vh;
@@ -270,7 +269,6 @@ p{
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .video iframe {
