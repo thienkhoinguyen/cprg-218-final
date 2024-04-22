@@ -66,6 +66,11 @@ p{
 .nav-links a:hover {
   color: rgb(255, 96, 194);
 }
+
+.nav-links a.active{
+  color: rgb(255, 96, 194);
+  background-color: transparent;
+}
   
   /*HERO SECTION */
   header{
