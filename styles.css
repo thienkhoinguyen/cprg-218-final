@@ -25,6 +25,13 @@ h3{
     font-weight: 400;
 }
 
+h4{
+  font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+
 p{
     font-size: 22px;
     line-height: 44px;
@@ -40,32 +47,25 @@ p{
 
 /* NAV LINKS */
 .nav-links {
-    font-family: 'Poppins-thin', sans-serif;
-    font-weight: 500;
-    font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
     list-style: none;
     display: flex;
-    gap: 3rem;
-    justify-content: center;
+    gap: 4rem;
     position: absolute;
-    top: 4vh;
+    top: 1.2vh;
     left: 50%;
     transform: translatex(-50%);
-    color: black;
 }
 
-.nav-links li {
-    font-size: 1.4rem;
-  }
-  
-  .nav-links li a {
-    color: black;
-    text-decoration: none;
-  }
-  
-  .nav-links li a:hover {
-    color: rgb(255, 96, 194);
-  }
+.nav-links a {
+  text-decoration: none;
+  color: rgb(60, 93, 170);
+}
+
+.nav-links a:hover {
+  color: rgb(255, 96, 194);
+}
   
   /*HERO SECTION */
   header{
