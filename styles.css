@@ -293,9 +293,10 @@ p{
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 44rem;
-  margin-left: 20vh;
-  padding: 60px;
+  gap: 32rem;
+  margin-left: 10vh;
+  margin-right: 12vh;  
+  padding: 30px;
 }
 
 .logo img {
@@ -304,7 +305,7 @@ p{
 }
 
 .footer-row .footer-col h4 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 40px;
 }
@@ -319,7 +320,7 @@ p{
 }
 
 .footer-col ul li a {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   text-decoration: none;
   color: #ffffff;
   transition: color 0.3s ease;
@@ -335,8 +336,12 @@ p{
 
 .footer .copyright {
   position: absolute;
-  top: 20vh;
-  left: 30vh;
-  font-size: 14px;
+  top: 26vh;
+  left: 18vh;
   color: #ffffff;
+}
+
+.copyright p{
+font-size: 1.4vh;
+line-height: 2vh;
 }
