@@ -39,3 +39,24 @@
   padding: 10px;
   text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    width: 40%;
+  }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    width: 40%;
+  }
+}

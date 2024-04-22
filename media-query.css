@@ -48,8 +48,8 @@
   overflow: hidden;
   background-color: rgb(255, 255, 255);
   position: absolute;
-  top: 2rem;
-  right: 3rem;
+  top: 3rem;
+  right: 5rem;
 }
 
 .topnav #myLinks{
@@ -167,11 +167,10 @@
   left: 62vh;
 }
 
-  .main {
-    height: 60vh;
-    background-size: 80% auto;
+main{
+  height: 64vh;
+  background-size: 64% auto;
 }
-
 
   .hero-text h2{
     font-size: 26px;
@@ -180,8 +179,8 @@
 
   .hero-text{
     text-align: left;
-    margin-top: 70vh;
-    margin-left: 12vh;
+    margin-top: 68vh;
+    margin-left: 24vh;
   }
 
 .projects{
@@ -234,7 +233,25 @@
 
 
 /* DESKTOP */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+
+  main{
+    height: 64vh;
+    background-size: 64% auto;
+  }
+  
+    .hero-text h2{
+      font-size: 26px;
+      line-height: 28px;
+    }
+  
+    .hero-text{
+      text-align: left;
+      margin-top: 68vh;
+      margin-left: 24vh;
+    }
+
+
 
   .panel {
       display: flex;
@@ -268,24 +285,31 @@
     height: 100%; 
 }
 
+/* FOOTER */
+
+.logo{
+  margin-left: 2vh;
+  margin-top: 4vh;
+}
+
 .footer{
   height: 36vh;
 }
 
 .footer .footer-row {
   justify-content: space-between;
-  gap: 4rem; 
+  gap: 1rem; 
   margin-left: 0vh; 
-  margin-right: 12vh;
+  margin-right: 28vh;
   padding: 20px; 
 }
 
 .footer .footer-col h4{
-  font-size: 18px;
+  font-size: 3vh;
 }
 
 .footer-col ul li a {
-  font-size: 16px;
+  font-size: 2vh;
 }
 
 
@@ -296,7 +320,7 @@
 }
 
 .copyright p{
-  font-size: 16px;
+  font-size: 18px;
   line-height: 16px;
 }
 
