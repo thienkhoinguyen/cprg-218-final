@@ -251,8 +251,10 @@ p{
 
 .panel {
   background-color: rgb(203, 227, 255);
-  overflow: hidden;
   display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
 .video-content {

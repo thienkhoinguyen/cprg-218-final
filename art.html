@@ -80,42 +80,6 @@
                         <p>from $75.00</p>
                 </div>
             </li>
-        </ul>
-    </section>
-
-    <section class="accordions">
-        <button class="accordion"><span>INSPIRATION</span><i class="fa-solid fa-paintbrush" alt="Paintbrush icon, click to view inspiration video and content"></i></button>
-        <div class="panel">
-            <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ImzFgjnSLCc?si=WglcdTqoPPqSevY9" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <div class="video-content">
-                <h2>Inspiration from others</h2>
-                <p>As an artist, it is important to take inspiration and lessons from other artists. Here is a sample video of one of the first artists that inspired me to try digital art specifically using Procreate on the iPad. Through various online tutorials and lessons, I had cultivated my own style. This video is from <strong>씰Seal</strong>, a Korean digital artist and one of my greatest inspirations!</p>
-            </div>
-        </div>
-    </section>
-
-    <script>
- var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-  acc[i].nextElementSibling.style.display = "none";
-}
-        </script>
-
-    <section class="container">
-        <ul class="card-container">
             <li class="card">
                 <img src="assets/Shadowheart.jpg" alt="elf woman looking at screen with black hair and chainmail holding a sphere">
                 <div class="card-content">
@@ -154,7 +118,47 @@ for (i = 0; i < acc.length; i++) {
             </li>
         </ul>
     </section>
-     
+
+    <section class="accordions">
+        <button class="accordion"><span>INSPIRATION</span><i class="fa-solid fa-paintbrush" alt="Paintbrush icon, click to view inspiration video and content"></i></button>
+        <div class="panel">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ImzFgjnSLCc?si=WglcdTqoPPqSevY9" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video-content">
+                <h2>Inspiration from others</h2>
+                <p>As an artist, it is important to take inspiration and lessons from other artists. Here is a sample video of one of the first artists that inspired me to try digital art specifically using Procreate on the iPad. Through various online tutorials and lessons, I had cultivated my own style. This video is from <strong>씰Seal</strong>, a Korean digital artist and one of my greatest inspirations!</p>
+            </div>
+        </div>
+
+        <button class="accordion"><span>MY PROCESS</span><i class="fa-solid fa-paintbrush" alt="Paintbrush icon, click to view inspiration video and content"></i></button>
+        <div class="panel">
+            <div class="video-content">
+                <h2>Process</h2>
+                <p>When I draw I pull up some inspiration from instagram, Pinterest or Tiktok and playa video in the background</p>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
+
+
     <section class="footer">
         <div class="footer-row">
           <div class="logo"><img src="assets/blue-logo.png"></div>
