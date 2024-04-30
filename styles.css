@@ -177,10 +177,10 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 52px;
+    margin-top: 4vh;
 }
 
-#btn-alert{
+.btn-alert{
     background: #35383a;
     color: aliceblue;
     padding: 24px 82px;
@@ -189,7 +189,7 @@ p{
     font-size: 18px;
 }
 
-#btn-alert:hover {
+.btn-alert:hover {
     background: rgb(60, 93, 170);
     color: white;
   }
