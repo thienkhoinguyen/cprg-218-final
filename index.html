@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <link rel="stylesheet" type="text/css" href="media-query.css">
-        <link rel="stylesheet" type="text/css" href="digimon.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>KHOITHEFISH</title>
-        <link rel="icon" type="image/x-icon" href="assets/blue-logo.png">
-    </head>
-    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="media-query.css">
+    <link rel="stylesheet" type="text/css" href="digimon.css">
+    <link rel="stylesheet" type="text/css" href="multistate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>KHOITHEFISH</title>
+    <link rel="icon" type="image/x-icon" href="assets/blue-logo.png">
+</head>
+
+<body>
     <header>
         <a href="index.html">
-            <div class="logo"><img src="assets/Logo.png" alt="Letter spelling Khoi with a fish inside the O">
-            </div>
-    </a>
+            <div class="logo"><img src="assets/Logo.png" alt="Letter spelling Khoi with a fish inside the O"></div>
+        </a>
 
-    <ul class="nav-links">
-        <li><a href="art.html" class="nav-link"><h4>ART</h4></a></li>
-        <li><a href="index.html" class="nav-link"><h4>PROJECTS</h4></a></li>
-        <li> <a href="about.html" class="nav-link active"><h4>ABOUT</h4></a></li>
-    </ul>
+        <ul class="nav-links">
+            <li><a href="art.html" class="nav-link"><h4>ART</h4></a></li>
+            <li><a href="index.html" class="nav-link"><h4>PROJECTS</h4></a></li>
+            <li><a href="about.html" class="nav-link active"><h4>ABOUT</h4></a></li>
+        </ul>
 
         <div class="hamburger-menu">
             <div class="line"></div>
@@ -32,7 +33,7 @@
 
         <div class="mobile-menu">
             <div class="topnav">
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
                     <i class="fa fa-bars"></i>
                 </a>
                 <div id="myLinks">
@@ -55,78 +56,158 @@
 
     <div class="projects">
         <h2>FEATURED PROJECTS</h2>
-   <div class="btn">
-    <a class="btn-alert">
-        UX/UI
-    </a>
-    <a class="btn-alert">
-        Game UX/UI
-    </a>
-    <a class="btn-alert">
-        Art / Graphics
-    </a>
-   </div>
-    <section class="container">
-        <div class="overlay">
-            <h3>Digital Media Overlay</h3>
-        <video src="assets/Twitch_Overlay.webm" autoplay loop controls></video>
-        <p>A project for our Digital Media course in which we needed to design an overlay for Twitch. This was something I used Illustrator and After effects to create this overlay.</p>
+        <div class="btn">
+            <a class="btn-alert" onclick="showProjects('ux-ui')">UX/UI</a>
+            <a class="btn-alert" onclick="showProjects('game-ux-ui')">Game UX/UI</a>
+            <a class="btn-alert" onclick="showProjects('art-graphics')">Art / Graphics</a>
         </div>
 
-        <div class="visual">
-            <h3>Visual Design SAIT AD</h3>
-            <img src="assets/SAITAD.png" alt="Advertisement for SAIT of girl leaning on table with slogan of learn a better way with SAIT">
-            <p>An Assignment from our Visual Design course in which we were to design based on a creative brief for make a mock-up of an advertisement for SAIT. The theme was to create something that would entice highschool students to learn more about SAIT's program</p>
+        <div class="project-content" id="ux-ui-projects">
+            <h3>UX/UI Projects</h3>
+            <div class="box-container">
+                <div class="box">
+                    <div class="content">
+                        <h3>Box 1 Content</h3>
+                        <p>This is the default content for Box 1.</p>
+                    </div>
+                    <div class="overlay">
+                        <h3>Hover State</h3>
+                        <p>This is shown when hovering over Box 1.</p>
+                    </div>
+                </div>
+                <!-- Add more boxes for UX/UI projects as needed -->
+            </div>
         </div>
-    </section>
 
-    <section class="digimon-list">
-        <div class="option-container">
-            <h3>Web Comm - Digimon API</h3>
-            <p>An assignment in our Web Communication course where we were to integrate API, for this assigment I learned more about how to use javascript and utilized a free API to showcase a list of some of my favourite Digimons</p>
+        <div class="project-content" id="game-ux-ui-projects">
+            <h3>Game UX/UI Projects</h3>
+            <div class="box-container">
+                <div class="box">
+                    <div class="content">
+                        <h3>Box 1 Content</h3>
+                        <p>This is the default content for Box 1.</p>
+                    </div>
+                    <div class="overlay">
+                        <h3>Hover State</h3>
+                        <p>This is shown when hovering over Box 1.</p>
+                    </div>
+                </div>
+                <!-- Add more boxes for Game UX/UI projects as needed -->
+            </div>
         </div>
-        <div class="container">
-            <ul id="digimon-results" class="card-container"></ul>
-        </div>
-      </section>
-      <script src="script.js" defer></script>
 
+        <div class="project-content" id="art-graphics-projects">
+            <h3>Art / Graphics Projects</h3>
+            <div class="box-container">
+                <div class="box">
+                    <div class="content">
+                        <h3>Box 1 Content</h3>
+                        <p>This is the default content for Box 1.</p>
+                    </div>
+                    <div class="overlay">
+                        <h3>Hover State</h3>
+                        <p>This is shown when hovering over Box 1.</p>
+                    </div>
+                </div>
+                <!-- Add more boxes for Art / Graphics projects as needed -->
+            </div>
+        </div>
+    </div>
 
     <section class="footer">
         <div class="footer-row">
             <div class="logo"><img src="assets/blue-logo.png" alt="fish inside the O with blue background"></div>
-          <div class="footer-col">
-            <h4>Main</h4>
-            <ul class="footer-links">
-              <li><a href="index.html">Projects</a></li>
-              <li><a href="about.html">About</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Contact</h4>
-            <ul class="footer-links">
-              <li><a href="#">Linkedin</a></li>
-              <li><a href="#">Resume</a></li>
-            </ul>
-          </div>
+            <div class="footer-col">
+                <h4>Main</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Linkedin</a></li>
+                    <li><a href="#">Resume</a></li>
+                </ul>
+            </div>
         </div>
       
         <div class="copyright">
-          <p>&copy; <span id="currentYear"></span> KHOITHEFISH All Rights Reserved.</p>
-          <p>Made with love and lots of coffee!</p>
+            <p>&copy; <span id="currentYear"></span> KHOITHEFISH All Rights Reserved.</p>
+            <p>Made with love and lots of coffee!</p>
         </div>
-      </section>
-  
+    </section>
+
+    <script src="script.js" defer></script>
 
     <script>
-    document.getElementById('currentYear').innerHTML = new Date().getFullYear();
-        function myFunction() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
-        }
-        }</script>
+        document.getElementById('currentYear').innerHTML = new Date().getFullYear();
 
+        function toggleMobileMenu() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+        function showProjects(category) {
+            // Hide all project sections
+            var projectSections = document.querySelectorAll('.project-content');
+            projectSections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+
+            // Show the selected category's projects
+            var selectedProjects = document.getElementById(category + '-projects');
+            if (selectedProjects) {
+                selectedProjects.style.display = 'block';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Event listeners for each button to change multi-state box content
+            document.getElementById('UX1').addEventListener('click', function () {
+                changeStateTo('Second'); // Change state to Second for UX/UI
+            });
+
+            document.getElementById('Art1').addEventListener('click', function () {
+                changeStateTo('Third'); // Change state to Third for Art / Graphics
+            });
+
+            document.getElementById('Game2').addEventListener('click', function () {
+                changeStateTo('First'); // Change state to First for Game UX/UI
+            });
+
+            document.getElementById('Art2').addEventListener('click', function () {
+                changeStateTo('Third'); // Change state to Third for Art / Graphics
+            });
+
+            document.getElementById('Game3').addEventListener('click', function () {
+                changeStateTo('First'); // Change state to First for Game UX/UI
+            });
+
+            document.getElementById('UX3').addEventListener('click', function () {
+                changeStateTo('Second'); // Change state to Second for UX/UI
+            });
+
+            // Function to change state of multi-state box
+            function changeStateTo(stateId) {
+                // Hide all states of statebox8
+                var states = document.querySelectorAll('#statebox8 > div');
+                states.forEach(function(state) {
+                    state.style.display = 'none';
+                });
+
+                // Show the selected state
+                var selectedState = document.getElementById(stateId);
+                if (selectedState) {
+                    selectedState.style.display = 'block';
+                }
+            }
+        });
+    </script>
+</body>
 </html>
