@@ -68,7 +68,7 @@
                 <div class="box">
                     <div class="content">
                         <h3>Box 1 Content</h3>
-                        <p>This is the default content for Box 1.</p>
+                        <p>This is the default content for UX/UI Projects.</p>
                     </div>
                     <div class="overlay">
                         <h3>Hover State</h3>
@@ -79,13 +79,13 @@
             </div>
         </div>
 
-        <div class="project-content" id="game-ux-ui-projects">
+        <div class="project-content" id="game-ux-ui-projects" style="display: none;">
             <h3>Game UX/UI Projects</h3>
             <div class="box-container">
                 <div class="box">
                     <div class="content">
                         <h3>Box 1 Content</h3>
-                        <p>This is the default content for Box 1.</p>
+                        <p>This is the default content for Game UX/UI Projects.</p>
                     </div>
                     <div class="overlay">
                         <h3>Hover State</h3>
@@ -96,13 +96,13 @@
             </div>
         </div>
 
-        <div class="project-content" id="art-graphics-projects">
+        <div class="project-content" id="art-graphics-projects" style="display: none;">
             <h3>Art / Graphics Projects</h3>
             <div class="box-container">
                 <div class="box">
                     <div class="content">
                         <h3>Box 1 Content</h3>
-                        <p>This is the default content for Box 1.</p>
+                        <p>This is the default content for Art / Graphics Projects.</p>
                     </div>
                     <div class="overlay">
                         <h3>Hover State</h3>
@@ -166,48 +166,6 @@
                 selectedProjects.style.display = 'block';
             }
         }
-
-        document.addEventListener('DOMContentLoaded', function () {
-            // Event listeners for each button to change multi-state box content
-            document.getElementById('UX1').addEventListener('click', function () {
-                changeStateTo('Second'); // Change state to Second for UX/UI
-            });
-
-            document.getElementById('Art1').addEventListener('click', function () {
-                changeStateTo('Third'); // Change state to Third for Art / Graphics
-            });
-
-            document.getElementById('Game2').addEventListener('click', function () {
-                changeStateTo('First'); // Change state to First for Game UX/UI
-            });
-
-            document.getElementById('Art2').addEventListener('click', function () {
-                changeStateTo('Third'); // Change state to Third for Art / Graphics
-            });
-
-            document.getElementById('Game3').addEventListener('click', function () {
-                changeStateTo('First'); // Change state to First for Game UX/UI
-            });
-
-            document.getElementById('UX3').addEventListener('click', function () {
-                changeStateTo('Second'); // Change state to Second for UX/UI
-            });
-
-            // Function to change state of multi-state box
-            function changeStateTo(stateId) {
-                // Hide all states of statebox8
-                var states = document.querySelectorAll('#statebox8 > div');
-                states.forEach(function(state) {
-                    state.style.display = 'none';
-                });
-
-                // Show the selected state
-                var selectedState = document.getElementById(stateId);
-                if (selectedState) {
-                    selectedState.style.display = 'block';
-                }
-            }
-        });
     </script>
 </body>
 </html>
