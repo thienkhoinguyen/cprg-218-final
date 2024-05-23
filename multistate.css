@@ -1,49 +1,34 @@
 .box-container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .box {
-    width: 200px;
-    height: 200px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 10vh;
+    width: 1800px;
+    height: 344vh;
+    background-image: url("assets/Water_Background.png");
+    background-size: auto, 10vh;
+    background-repeat: no-repeat;
+    border: 1px solid #f0f0f0;
     position: relative;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
 }
 
-.box:hover {
-    transform: scale(1.1);
-}
 
-.content, .overlay {
+.content, .project {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.box:hover .overlay {
-    opacity: 1;
-}
-
-.overlay {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding: 20px;
+    justify-content: center;
     text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
