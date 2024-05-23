@@ -1,3 +1,21 @@
+/* Header Scrolling */
+let lastScrollTop = 0;
+const header = document.querySelector('header');
+
+window.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+        // Scroll down
+        header.classList.add('header-hidden');
+    } else {
+        // Scroll up
+        header.classList.remove('header-hidden');
+    }
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+});
+
+
 /*Create Card */
 
 async function createCardElement(item) {
