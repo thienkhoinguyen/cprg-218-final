@@ -161,6 +161,13 @@ header{
     margin-right: 24vh;
   }
 
+  .projects h2{
+    font-size: 58px;
+    color: #4e73d2;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 4.95px;
+  }
+
   .overlay{
     width: 80%;
     margin: 0 auto;
