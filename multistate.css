@@ -15,7 +15,7 @@
     padding: 24px 72px;
     border-radius: 18px;
     font-family: 'Open+Sans', sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     cursor: pointer;
 }
 
@@ -30,6 +30,7 @@
   }
 
 .box-container {
+    margin-top: 6vh;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -38,12 +39,12 @@
 .box {
     margin-bottom: 10vh;
     width: 1800px;
-    height: 800px; 
+    height: 172vh; 
     background-image: url("assets/Water_Background.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border: 1px solid #f0f0f0;
+    border: 1px solid #2fbbe6;
     position: relative;
     display: flex; 
     align-items: center;

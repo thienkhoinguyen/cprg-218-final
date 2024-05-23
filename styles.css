@@ -54,22 +54,22 @@ p{
     display: flex;
     gap: 4rem;
     position: absolute;
-    top: 1.2vh;
-    left: 50%;
-    transform: translatex(-50%);
+    top: 0.1vh;
+    left: 60%;
+    transform: translatex(-1%);
 }
 
 .nav-links a {
   text-decoration: none;
-  color: rgb(60, 93, 170);
+  color: rgb(18, 20, 26);
 }
 
 .nav-links a:hover {
-  color: rgb(255, 96, 194);
+  color: rgb(60, 93, 170);
 }
 
 .nav-links a.active{
-  color: rgb(255, 96, 194);
+  color: rgb(60, 93, 170);
   background-color: transparent;
 }
   
@@ -133,7 +133,7 @@ p{
   .logo img{
     width: 100%;
     max-width: 120px;
-    margin-left: 4vh;
+    margin-left: 44vh;
   }
 
   /* PROJECTS */

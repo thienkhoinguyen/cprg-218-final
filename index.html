@@ -20,7 +20,7 @@
         <ul class="nav-links">
             <li><a href="art.html" class="nav-link"><h4>ART</h4></a></li>
             <li><a href="index.html" class="nav-link"><h4>PROJECTS</h4></a></li>
-            <li><a href="about.html" class="nav-link active"><h4>ABOUT</h4></a></li>
+            <li><a href="about.html" class="nav-link"><h4>ABOUT</h4></a></li>
         </ul>
         <div class="hamburger-menu">
             <div class="line"></div>
@@ -40,6 +40,7 @@
             </div>
         </div>
     </header>
+    
     <main>
         <div class="hero-text">
             <h2>Welcome to the Pond! I'm</h2>
@@ -56,7 +57,6 @@
             <a class="btn-alert" onclick="showProjects('art-graphics')">Art / Graphics</a>
         </div>
         <div class="project-content" id="ux-ui-projects">
-            <h3>UX/UI Projects</h3>
             <div class="box-container">
                 <div class="box">
                     <div class="project">
@@ -67,7 +67,6 @@
             </div>
         </div>
         <div class="project-content" id="game-ux-ui-projects" style="display: none;">
-            <h3>Game UX/UI Projects</h3>
             <div class="box-container">
                 <div class="box">
                     <div class="project">
@@ -79,7 +78,6 @@
             </div>
         </div>
         <div class="project-content" id="art-graphics-projects" style="display: none;">
-            <h3>Art / Graphics Projects</h3>
             <div class="box-container">
                 <div class="box">
                     <div class="project">
@@ -115,7 +113,10 @@
     </section>
     <script src="script.js" defer></script>
     <script>
+        // Set the current year
         document.getElementById('currentYear').innerHTML = new Date().getFullYear();
+    
+        // Function to toggle the mobile menu
         function toggleMobileMenu() {
             var x = document.getElementById("myLinks");
             if (x.style.display === "block") {
@@ -124,6 +125,20 @@
                 x.style.display = "block";
             }
         }
+    
+        // Add the active class to the current navigation link
+        document.addEventListener("DOMContentLoaded", function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const currentPath = window.location.pathname.split('/').pop();
+    
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPath) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    
+        // Function to show projects by category
         function showProjects(category) {
             // Hide all project sections
             var projectSections = document.querySelectorAll('.project-content');
@@ -146,6 +161,7 @@
                 clickedButton.classList.add('selected');
             }
         }
+    
         showProjects('ux-ui');
     </script>
 </body>
