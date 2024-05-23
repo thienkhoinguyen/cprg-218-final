@@ -12,25 +12,21 @@
     <title>KHOITHEFISH</title>
     <link rel="icon" type="image/x-icon" href="assets/blue-logo.png">
 </head>
-
 <body>
     <header>
         <a href="index.html">
             <div class="logo"><img src="assets/Logo.png" alt="Letter spelling Khoi with a fish inside the O"></div>
         </a>
-
         <ul class="nav-links">
             <li><a href="art.html" class="nav-link"><h4>ART</h4></a></li>
             <li><a href="index.html" class="nav-link"><h4>PROJECTS</h4></a></li>
             <li><a href="about.html" class="nav-link active"><h4>ABOUT</h4></a></li>
         </ul>
-
         <div class="hamburger-menu">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
-
         <div class="mobile-menu">
             <div class="topnav">
                 <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
@@ -44,7 +40,6 @@
             </div>
         </div>
     </header>
-
     <main>
         <div class="hero-text">
             <h2>Welcome to the Pond! I'm</h2>
@@ -53,15 +48,13 @@
             <video src="assets/Wave.webm" autoplay muted></video>
         </div>
     </main>
-
     <div class="projects">
         <h2>FEATURED PROJECTS</h2>
         <div class="btn">
-            <a class="btn-alert" onclick="showProjects('ux-ui')">UX/UI</a>
+            <a class="btn-alert selected" onclick="showProjects('ux-ui')">UX/UI Design</a>
             <a class="btn-alert" onclick="showProjects('game-ux-ui')">Game UX/UI</a>
             <a class="btn-alert" onclick="showProjects('art-graphics')">Art / Graphics</a>
         </div>
-
         <div class="project-content" id="ux-ui-projects">
             <h3>UX/UI Projects</h3>
             <div class="box-container">
@@ -70,15 +63,9 @@
                         <h3>Box 1 Content</h3>
                         <p>This is the default content for UX/UI Projects.</p>
                     </div>
-                    <div class="overlay">
-                        <h3>View Here</h3>
-                        <p>This is shown when hovering over Box 1.</p>
-                    </div>
                 </div>
-                <!-- Add more boxes as needed -->
             </div>
         </div>
-
         <div class="project-content" id="game-ux-ui-projects" style="display: none;">
             <h3>Game UX/UI Projects</h3>
             <div class="box-container">
@@ -87,16 +74,10 @@
                         <h3>Box 1 Content</h3>
                         <p>This is the default content for Game UX/UI Projects.</p>
                     </div>
-                    <div class="overlay">
-                        <h3>Hover State</h3>
-                        <p>This is shown when hovering over Box 1.</p>
-                        <img src="assets/Shadowheart.jpg">
-                    </div>
+                    <img src="assets/Shadowheart.jpg">
                 </div>
-                <!-- Add more boxes for Game UX/UI projects as needed -->
             </div>
         </div>
-
         <div class="project-content" id="art-graphics-projects" style="display: none;">
             <h3>Art / Graphics Projects</h3>
             <div class="box-container">
@@ -105,16 +86,10 @@
                         <h3>Box 1 Content</h3>
                         <p>This is the default content for Art / Graphics Projects.</p>
                     </div>
-                    <div class="overlay">
-                        <h3>Hover State</h3>
-                        <p>This is shown when hovering over Box 1.</p>
-                    </div>
                 </div>
-                <!-- Add more boxes for Art / Graphics projects as needed -->
             </div>
         </div>
     </div>
-
     <section class="footer">
         <div class="footer-row">
             <div class="logo"><img src="assets/blue-logo.png" alt="fish inside the O with blue background"></div>
@@ -133,18 +108,14 @@
                 </ul>
             </div>
         </div>
-      
         <div class="copyright">
             <p>&copy; <span id="currentYear"></span> KHOITHEFISH All Rights Reserved.</p>
             <p>Made with love and lots of coffee!</p>
         </div>
     </section>
-
     <script src="script.js" defer></script>
-
     <script>
         document.getElementById('currentYear').innerHTML = new Date().getFullYear();
-
         function toggleMobileMenu() {
             var x = document.getElementById("myLinks");
             if (x.style.display === "block") {
@@ -153,20 +124,29 @@
                 x.style.display = "block";
             }
         }
-
         function showProjects(category) {
             // Hide all project sections
             var projectSections = document.querySelectorAll('.project-content');
             projectSections.forEach(function(section) {
                 section.style.display = 'none';
             });
-
             // Show the selected category's projects
             var selectedProjects = document.getElementById(category + '-projects');
             if (selectedProjects) {
                 selectedProjects.style.display = 'block';
             }
+            // Remove 'selected' class from all buttons
+            var buttons = document.querySelectorAll('.btn-alert');
+            buttons.forEach(function(button) {
+                button.classList.remove('selected');
+            });
+            // Add 'selected' class to the clicked button
+            var clickedButton = document.querySelector(`[onclick="showProjects('${category}')"]`);
+            if (clickedButton) {
+                clickedButton.classList.add('selected');
+            }
         }
+        showProjects('ux-ui');
     </script>
 </body>
 </html>

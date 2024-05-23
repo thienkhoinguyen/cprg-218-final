@@ -205,27 +205,6 @@ p{
     border-radius: 50%;
 }
 
-.btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4vh;
-}
-
-.btn-alert{
-    background: #35383a;
-    color: aliceblue;
-    padding: 24px 82px;
-    border: 1px solid #1d1d1d;
-    border-radius: 32px;
-    font-size: 18px;
-}
-
-.btn-alert:hover {
-    background: rgb(60, 93, 170);
-    color: white;
-  }
-
   .otherinfo{
       text-align: left;
       padding-left: 12vh;
