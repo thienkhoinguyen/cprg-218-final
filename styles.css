@@ -28,7 +28,7 @@ h3{
 }
 
 h4{
-  font-size: 24px;
+  font-size: 22px;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
 }
@@ -56,8 +56,8 @@ p{
     display: flex;
     gap: 4rem;
     position: absolute;
-    top: -1vh;
-    left: 60%;
+    top: 0vh;
+    left: 64%;
     transform: translatex(-1%);
 }
 
