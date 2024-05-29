@@ -108,6 +108,10 @@ header{
     justify-content: center;
   }
 
+  .suncor-page main{
+    background-image: none;
+  }
+
   .hero-text{
     margin-top: 20vh;
     max-width: 800px;
